@@ -1,4 +1,4 @@
-function showModal() {
+/*function showModal() {
 	var opt = "dialogwidth=400px; dialogheight=100px";
 	var md = window.showModalDialog("dialog.html", "test", opt);
 }
@@ -12,3 +12,4 @@ function doFirst() {
 	enter.addEventListener('click', showModal, false);
 }
 window.addEventListener("load", doFirst, false);
+*/
