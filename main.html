@@ -1,23 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+	<meta charset="UTF-8" />
 	<script src="main.js"></script>
 	<link rel="stylesheet" href="main.css"/>
 </head>
 <body>
+	<header>
+		<h1>伝票入力</h1>
+	</header>
+	<nav>
+		<ul class="menu">
+			<li>伝票</li>
+			<li>分析</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</nav>
 	<section id="main">
-		<canvas id="canvas" width="600" height="400">
-			test
-		</canvas>
-		<input type="button" value="enter" id="enter"/>
+		<h1>明細一覧</h1>
+		<table>
+			<caption>表題</caption>
+    		<tr><th>列A</th><th>列B</th><th>列C</th></tr>
+    		<tr><td>行A-1</td><td>行B-1</td><td>行C-1</td></tr>
+    		<tr><td>行A-2</td><td>行B-2</td><td>行C-2</td></tr>
+    		<tr><td>行A-3</td><td>行B-3</td><td>行C-3</td></tr>
+   		</table>
+		<li>
+			<input type="button" value="登録" id="create" onclick="window.location.href='#modal'"/>
+		</li>
 	</section>
-	<a href="#modal">Open Modal</a>
 	<div id="modal" class="modalDialog">
 		<div>
 			<a href="#close" title="Close" class="close">X</a>
 			<h2>Modal Box</h2>
 			<p>This is a sample modal box that can be created using the powers of CSS3.</p>
 			<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+			<li>
+				<label for="name"></label>
+				<input type="number" min="0" max="10" size="2" id="name"/>
+			</li>
+			<li>
+				<label for="date">転記日付</label>	
+				<input type="date" id="date"/>
+			</li>
 		</div>
 	</div>
 </body>
